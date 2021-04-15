@@ -7,27 +7,40 @@
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header_logo"><a href="#"><img src="./img/logo.png" alt="logo"></a></div>
-        <nav class="header_nav">
-          <ul>
-            <li><a href="#">Результаты</a></li>
-            <li><a href="#">Программа тренировок</a><i class="icon-arrow-bottom"></i></li>
-            <li><a href="#">Содержание</a></li>
-            <li><a href="#">Обо мне</a></li>
-            <li><a href="#">Отзывы</a></li>
-          </ul>
-        </nav>
-        <div class="header_right"><a class="button-i" href="#">Личный кабинет<span class="border"><i class="icon-user"></i></span></a>
-          <button class="header_burger" type="button">
-            <div class="line">
-              <div class="center"></div>
-            </div>
-          </button>
+    <div class="header-position">
+      <header class="header">
+        <div class="container">
+          <div class="header_logo"><a href="#"><img src="./img/logo.png" alt="logo"></a></div>
+          <nav class="header_nav">
+            <ul>
+              <li><a href="#">Результаты</a></li>
+              <li><a class="menu-child" href="#">Программа тренировок</a><i class="icon-arrow-bottom"></i>
+                <div class="header_nav-open">
+                  <ul>
+                    <li><a href="#">Табата ”Жиротопка”</a></li>
+                    <li><a href="#">Гайд “Супер ягодицы”</a></li>
+                    <li><a href="#">Фитнес с резинками</a></li>
+                    <li><a href="#">Фитнес-интенсив на все тело</a></li>
+                    <li><a href="#">Курс по питанию “Худеем без диет”</a></li>
+                    <li><a href="#">Фитнес-марафон “Proжарка”</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Содержание</a></li>
+              <li><a href="#">Обо мне</a></li>
+              <li><a href="#">Отзывы</a></li>
+            </ul>
+          </nav>
+          <div class="header_right"><a class="button-i" href="#">Личный кабинет<span class="border"><i class="icon-user"></i></span></a>
+            <button class="header_burger" type="button" id="active_menu">
+              <div class="line">
+                <div class="center"></div>
+              </div>
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
     <div class="section_start section_start-two">
       <div class="container">
         <div class="flex flex-wrap">
@@ -35,7 +48,6 @@
             <h1 class="title">Фитнес-марафон <span>Proжарка #10</span> твой путь к стройности за 28 дней</h1>
             <p class="text">Полноценные тренировки, где выполняешь упражнения вместе с тренером в любом месте с вкусным питанием с поддержкой и мотивацией</p>
             <div class="section_start-buttons"><a class="button-default" href="#">Начать c бесплатного занятия</a></div>
-            <div class="line"> </div>
           </div>
           <div class="w-6/12">
             <div class="relative">
@@ -47,9 +59,7 @@
                   <p class="text">девочек сделали супер тело вместе со мной!</p>
                 </div>
               </div>
-              <div class="section_start-right">
-                <div class="photo_card"><img src="./img/fotos/header_mini.jpg" alt="mini-card"></div>
-              </div>
+              <div class="section_start-right"></div>
             </div>
           </div>
         </div>
@@ -768,8 +778,6 @@
             <div class="right"><img class="lazyload" data-src="./img/prize_3.png" alt="prize3"></div>
           </div>
         </div>
-        <div class="vector4"><img class="lazyload" data-src="./img/tr/vector4.png" alt="vectro4"></div>
-        <div class="vector6"><img class="lazyload" data-src="./img/tr/vector6.png" alt="vectro6"></div>
       </div>
     </div>
     <div class="section_about block-top-arrow">
@@ -781,7 +789,6 @@
         </div>
         <div class="w-6/12">
           <div class="section_about-right">
-            <div class="line"></div>
             <h3 class="text-title">Фитнес школа <span>«Proжарка»<span></h3>
             <p class="text-first">Привет! Я - Юля, фитнес-тренер. В 2016 году открыла фитнес-студию BZONE, где со временем столкнулась с нехваткой мест для учеников, в связи с большой популярностью моих тренировок.</p>
             <p class="text-last">Пандемия в 2020 году подтолкнула перейти в онлайн-формат тренировок и за это время более 1000 девочек сделали супер тело вместе со мной! </p>
@@ -954,23 +961,32 @@
         </div>
       </div>
     </footer>
-    <div class="menu_small">
-      <div class="menu_small-header">
-        <div class="logo"><a href="#"><img class="lazyload" data-src="./img/logo.png" alt=""></a></div>
-        <button class="close" type="button" id="menu_small_close"></button>
+    <div class="slide_menu" id="slide_menu">
+      <div class="slide_menu-top"><a class="logo" href="#"><img src="./img/logo.png" alt="logo"></a><a class="button-i sm-button" href="#">Личный кабинет<span class="border"><i class="icon-user"></i></span></a>
+        <button class="header_burger" type="button" id="slide_menu_close"><i class="icon-cancel"></i></button>
       </div>
-      <div class="menu_small-content">
+      <div class="slide_menu-list">
         <ul>
-          <li><a href="#">Результаты</a></li>
-          <li><a href="#">Программа тренировок</a><i class="icon-arrow-bottom"></i></li>
+          <li class="active"><a href="#">Результаты</a></li>
+          <li><a href="#">Программа тренировок</a>
+            <ul class="tab-menu">
+              <li><a href="#">Табата ”Жиротопка”</a></li>
+              <li><a href="#">Гайд “Супер ягодицы”</a></li>
+              <li><a href="#">Фитнес с резинками</a></li>
+              <li><a href="#">Фитнес-интенсив на все тело</a></li>
+              <li><a href="#">Курс по питанию “Худеем без диет”</a></li>
+              <li><a href="#">Фитнес-марафон “Proжарка”</a></li>
+            </ul>
+          </li>
           <li><a href="#">Содержание</a></li>
           <li><a href="#">Обо мне</a></li>
           <li><a href="#">Отзывы</a></li>
         </ul>
       </div>
-      <div class="menu_small-footer"><a class="button-i" href="#">Личный кабинет<span class="border"><i class="icon-user"></i></span></a></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./libs/jquery.custom-select/jquery.custom-select.js"></script>
+    <script src="./libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
     <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <script src="./libs/lazysizes/lazysizes.min.js"></script>
     <script src="./js/common.js"> </script>

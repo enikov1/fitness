@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Lk Descr</title>
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="lk_page">
+      <div class="user_wrap">
+        <aside class="user_aside">
+          <div class="user_aside-logo"><a href="#"><img src="./img/logo.png" alt="logo"></a></div>
+          <div class="user_aside-nav">
+            <ul>
+              <li class="active"><a href="#">Главная</a></li>
+              <li><a href="#">Мои курсы</a></li>
+              <li><a href="#">Частые вопросы</a></li>
+              <li><a href="#">Калькулятор</a></li>
+              <li><a href="#">Профиль</a></li>
+              <li><a href="#">Конкурсы</a></li>
+              <li><a href="#">Поддержка</a></li>
+            </ul>
+          </div>
+          <div class="user_aside-footer">
+            <div class="footer_nav">
+              <ul>
+                <li><a href="mail:info@info.ru">info@info.ru</a></li>
+                <li><a href="tel:79515243577">+7 951 524 35 77</a></li>
+              </ul>
+            </div>
+            <div class="footer_social"><a href="#">
+                <div class="icon-youtube"></div></a><a href="#">
+                <div class="icon-Instagram"></div></a><a href="#">
+                <div class="icon-vk"></div></a><a href="#">
+                <div class="icon-facebook"></div></a></div>
+          </div>
+        </aside>
+        <div class="user_wrap-content">
+          <header class="user_header">
+            <div class="user_header-logo"><a href="#"><img src="./img/logo.png" alt="logo"></a></div>
+            <div class="user_header-user">
+              <div class="user_header-user-image"><img src="./img/avatar.png" alt="avatar"></div><span class="title">Галина Иванова</span>
+            </div>
+            <div class="user_header-button"><a class="button-white-i" href="#"><span>Войти</span><i class="icon-exit"></i></a>
+              <button class="header_burger" type="button" id="active_lk_menu">
+                <div class="line">
+                  <div class="center"></div>
+                </div>
+              </button>
+            </div>
+          </header><a class="back_link" href="#"><i class="icon-arrow-left"></i>Вернуться к курсам</a>
+          <h1 class="user_title">Фитнес-марафон PROЖАРКА</h1>
+          <div class="user_tabs">
+            <div class="user_tabs-nav">
+              <ul>
+                <li><a href="#">Упражнения </a></li>
+                <li><a href="#">Бонусы</a></li>
+                <li class="active"><a href="#">Описание</a></li>
+              </ul>
+            </div>
+            <div class="user_gift-block">
+              <div class="user_gift-block_left">
+                <h3 class="title">Участвуй в конкурсе и <span>получай призы</span></h3>
+                <p class="text-small">Заполни анкету перед прохождением курса и после прохождения курса, нажми кнопку “Отправить” и получишь возможность выиграть призы!</p>
+              </div>
+              <div class="user_gift-block_right">
+                <picture>
+                  <source media="(max-width: 540px)" srcset="./img/lk_phone_540.png">
+                  <source media="(min-width: 900px)" srcset="./img/lk_phone.png"><img src="./img/lk_phone.png" alt="">
+                </picture>
+              </div>
+            </div>
+            <div class="flex flex-wrap flex-between">
+              <div class="w-6/12">
+                <div class="user_form-block">
+                  <h2 class="user_title-block">Анкета до начала курса</h2>
+                  <div class="field-set">
+                    <label class="field-set_label">Возраст</label>
+                    <input class="field" type="text" name="user_age">
+                  </div>
+                  <div class="field-set">
+                    <label class="field-set_label">Рост</label>
+                    <div class="field-text">
+                      <input class="field" type="text" name="user_height"><span class="text">см</span>
+                    </div>
+                  </div>
+                  <div class="field-set">
+                    <label class="field-set_label">Вес</label>
+                    <div class="field-text">
+                      <input class="field" type="text" name="user_weight"><span class="text">кг</span>
+                    </div>
+                  </div>
+                  <div class="field-group">
+                    <div class="field-set">
+                      <label class="field-set_label">Объём талии</label>
+                      <div class="field-text">
+                        <input class="field" type="text" name="user_waist_size"><span class="text">см</span>
+                      </div>
+                    </div>
+                    <div class="field-set">
+                      <label class="field-set_label">Объём бедра</label>
+                      <div class="field-text">
+                        <input class="field" type="text" name="user_waist_size"><span class="text">см</span>
+                      </div>
+                    </div>
+                    <div class="field-set">
+                      <label class="field-set_label">Объём груди</label>
+                      <div class="field-text">
+                        <input class="field" type="text" name="user_waist_size"><span class="text">см</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field-set">
+                    <label class="field-set_label">Загрузите фото (фас, профиль, анфас)</label>
+                    <div class="field-upload">
+                      <label class="upload-select">
+                        <input class="upload" type="file" name="user_scan"><span class="text">Выберите файл</span><i class="icon-upload"></i>
+                      </label>
+                      <div class="upload-result"><span class="text">Файл не выбран</span></div>
+                    </div>
+                  </div>
+                  <div class="field-set">
+                    <label class="field-set_label">Ваши цели</label>
+                    <textarea class="field" name="user_comment" placeholde="Каких целей хотите достичь за время прохождения курса?"> </textarea>
+                  </div>
+                  <div class="field-button">
+                    <button class="button-default" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="w-6/12">
+                <div class="user_form-block locked">
+                  <h2 class="user_title-block">Анкета после прохождения курса</h2>
+                  <div class="field-set">
+                    <label class="field-set_label">Вес</label>
+                    <div class="field-text">
+                      <input class="field" type="text" name="user_weight"><span class="text">кг</span>
+                    </div>
+                  </div>
+                  <div class="field-group">
+                    <div class="field-set">
+                      <label class="field-set_label">Объём талии</label>
+                      <div class="field-text">
+                        <input class="field" type="text" name="user_waist_size"><span class="text">см</span>
+                      </div>
+                    </div>
+                    <div class="field-set">
+                      <label class="field-set_label">Объём бедра</label>
+                      <div class="field-text">
+                        <input class="field" type="text" name="user_waist_size"><span class="text">см</span>
+                      </div>
+                    </div>
+                    <div class="field-set">
+                      <label class="field-set_label">Объём груди</label>
+                      <div class="field-text">
+                        <input class="field" type="text" name="user_waist_size"><span class="text">см</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field-set">
+                    <label class="field-set_label">Загрузите фото (фас, профиль, анфас)</label>
+                    <div class="field-upload">
+                      <label class="upload-select">
+                        <input class="upload" type="file" name="user_scan"><span class="text">Выберите файл</span><i class="icon-upload"></i>
+                      </label>
+                      <div class="upload-result"><span class="text">Файл не выбран</span></div>
+                    </div>
+                  </div>
+                  <div class="field-set">
+                    <label class="field-set_label">Каких целей достигли за прохождение курса?</label>
+                    <div class="field-checked">
+                      <label class="checked">
+                        <input type="checkbox" name="user_checked_1"><span class="check"></span><span class="text">Ушёл лишний вес</span>
+                      </label>
+                    </div>
+                    <div class="field-checked">
+                      <label class="checked">
+                        <input type="checkbox" name="user_checked_2"><span class="check"></span><span class="text">Подтянулось тело</span>
+                      </label>
+                    </div>
+                    <div class="field-checked">
+                      <label class="checked">
+                        <input type="checkbox" name="user_checked_3"><span class="check"></span><span class="text">Прорисовался рельеф</span>
+                      </label>
+                    </div>
+                    <div class="field-checked">
+                      <label class="checked">
+                        <input type="checkbox" name="user_checked_4"><span class="check"></span><span class="text">Повысилась выносливость</span>
+                      </label>
+                    </div>
+                    <div class="field-checked">
+                      <label class="checked">
+                        <input type="checkbox" name="user_checked_5"><span class="check"></span><span class="text">Поднялась самооценка</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="field-set">
+                    <label class="field-set_label">Отзыв о курсе</label>
+                    <textarea class="field" name="user_comment"></textarea>
+                  </div>
+                  <div class="field-button">
+                    <button class="button-default" type="submit">Отправить </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide_menu" id="slide_menu_lk">
+      <div class="slide_menu-top"><a class="logo" href="#"><img src="./img/logo.png" alt="logo"></a><a class="button-white-i" href="#"><span>Войти</span><i class="icon-exit"></i></a>
+        <button class="header_burger" type="button" id="slide_menu_lk_close"><i class="icon-cancel"></i></button>
+      </div>
+      <div class="slide_menu-list">
+        <ul>
+          <li class="active"><a href="#">Главная</a></li>
+          <li><a href="#">Мои курсы</a></li>
+          <li><a href="#">Частые вопросы</a></li>
+          <li><a href="#">Калькулятор</a></li>
+          <li><a href="#">Профиль</a></li>
+          <li><a href="#">Конкурсы</a></li>
+          <li><a href="#">Поддержка</a></li>
+        </ul>
+      </div>
+      <div class="slide_menu-foot">
+        <ul>
+          <li><a href="mail:info@info.ru">info@info.ru</a></li>
+          <li><a href="tel:79515243577">+7 951 524 35 77</a></li>
+        </ul>
+        <div class="footer_social"><a href="#">
+            <div class="icon-youtube"></div></a><a href="#">
+            <div class="icon-Instagram"></div></a><a href="#">
+            <div class="icon-vk"></div></a><a href="#">
+            <div class="icon-facebook"></div></a></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./libs/jquery.custom-select/jquery.custom-select.js"></script>
+    <script src="./libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./libs/lazysizes/lazysizes.min.js"></script>
+    <script src="./js/common.js"> </script>
+  </body>
+</html>
