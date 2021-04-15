@@ -2403,6 +2403,10 @@ button.swiper-pagination-bullet {
           justify-content: center;
 }
 
+.arrow-button:hover {
+  background-color: #DED6CF;
+}
+
 .arrow-button i {
   font-size: 0.625rem;
   color: #DA5A87;
@@ -6173,6 +6177,18 @@ button.swiper-pagination-bullet {
   color: #3D4039;
   width: 100%;
   font-family: 'Gilroy';
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.field:hover {
+  -webkit-box-shadow: 0px 4px 8px rgba(218, 90, 135, 0.12);
+          box-shadow: 0px 4px 8px rgba(218, 90, 135, 0.12);
+}
+
+.field:focus {
+  border-color: #B9AFB2;
 }
 
 .field::-webkit-input-placeholder {
@@ -6189,6 +6205,11 @@ button.swiper-pagination-bullet {
 
 .field:-ms-input-placeholder {
   color: #A4A4A4;
+}
+
+.field:disabled {
+  border-color: #ECE6E8;
+  color: #C9C9C9;
 }
 
 textarea.field {
