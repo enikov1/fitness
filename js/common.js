@@ -1,4 +1,32 @@
 $(document).ready(function () {
+
+
+	$(window).scroll(function() {
+		if($(window).scrollTop() > 50) {
+			$('.header').addClass('header-fixed');
+		} else {
+			$('.header').removeClass('header-fixed');
+		}
+	});
+
+	let menu_item = $('.header_nav ul li a.menu-child'),
+		menu_wrap = $('.header_nav-open');
+
+	menu_item.on('click', function(e) {
+		e.preventDefault();
+		let _this = $(this);
+
+		_this.parent().toggleClass('active');
+
+		
+	});
+
+	$(document).mouseup(function (e) {
+		let container = $(".header_nav-open, .header_nav ul li");
+		if (container.has(e.target).length === 0){
+			$('.header_nav ul li.active').removeClass('active');
+		}
+	});
    
 	$('.block_faq-item').each(function() {
 		let _this = $(this);
@@ -14,17 +42,17 @@ $(document).ready(function () {
 		return false;
 	});
 
-	$('.header_burger').on('click', function() {
-		$('.menu_small').addClass('active');
+	// $('.header_burger').on('click', function() {
+	// 	$('.menu_small').addClass('active');
 
-		$('body').addClass('scroll_off');
-	});
+	// 	$('body').addClass('scroll_off');
+	// });
 
-	$('#menu_small_close').on('click', function() {
-		$('.menu_small').removeClass('active');
+	// $('#menu_small_close').on('click', function() {
+	// 	$('.menu_small').removeClass('active');
 
-		$('body').removeClass('scroll_off');
-	});
+	// 	$('body').removeClass('scroll_off');
+	// });
 
 	// tabs
 
@@ -78,6 +106,7 @@ $(document).ready(function () {
 		// direction: 'vertical',
 		// effect: 'fade',
         loop: true,
+		spaceBetween: 20,
 		breakpoints: {
 			0: {
 				navigation: {
@@ -106,6 +135,7 @@ $(document).ready(function () {
 
 	const swiper_work2 = new Swiper('#section_tabs-2 .swiper-container', {
 		loop: true,
+		spaceBetween: 20,
 		breakpoints: {
 			0: {
 				navigation: {
@@ -134,6 +164,7 @@ $(document).ready(function () {
 
 	const swiper_work3 = new Swiper('#section_tabs-3 .swiper-container', {
 		loop: true,
+		spaceBetween: 20,
 		breakpoints: {
 			0: {
 				navigation: {
@@ -162,6 +193,7 @@ $(document).ready(function () {
 
 	const swiper_work4 = new Swiper('#section_tabs-4 .swiper-container', {
 		loop: true,
+		spaceBetween: 20,
 		breakpoints: {
 			0: {
 				navigation: {
@@ -190,6 +222,7 @@ $(document).ready(function () {
 
 	const swiper_work5 = new Swiper('#section_tabs-5 .swiper-container', {
 		loop: true,
+		spaceBetween: 20,
 		breakpoints: {
 			0: {
 				navigation: {
@@ -218,6 +251,7 @@ $(document).ready(function () {
 
 	const swiper_work6 = new Swiper('#section_tabs-6 .swiper-container', {
 		loop: true,
+		spaceBetween: 20,
 		breakpoints: {
 			0: {
 				navigation: {
@@ -252,7 +286,7 @@ $(document).ready(function () {
 		noSwiping: true,
 		allowTouchMove: false,
 		// direction: 'vertical',
-        // spaceBetween: 100,
+        spaceBetween: 20,
 		// effect: 'fade',
         // loop: true,
 	});
@@ -300,6 +334,7 @@ $(document).ready(function () {
 		// direction: 'vertical',
 		// effect: 'fade',
 		slidesPerView: 1,
+		spaceBetween: 20,
         loop: true,
 
 		navigation: {
@@ -407,4 +442,31 @@ $(document).ready(function () {
 			}
 	});
 	
+	$('.upload').on('change', function() {
+		let _this = $(this);
+		let file_name = _this[0].files[0].name;
+
+		_this.closest('.field-upload').find('.upload-result .text').text(file_name);
+	});
+
+	$('.field-select').customSelect();
+
+	$('input[type="tel"]').mask("+7(999) 999-9999");
+
+
+	$('#active_lk_menu').on('click', function() {
+		$('#slide_menu_lk').addClass('active');
+	});
+
+	$('#slide_menu_lk_close').on('click', function() {
+		$('#slide_menu_lk').removeClass('active');
+	});
+	
+	$('#active_menu').on('click', function() {
+		$('#slide_menu').addClass('active');
+	});
+
+	$('#slide_menu_close').on('click', function() {
+		$('#slide_menu').removeClass('active');
+	});
 });
