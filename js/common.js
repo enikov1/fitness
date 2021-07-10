@@ -9,6 +9,10 @@ $(document).ready(function () {
 		}
 	});
 
+	$('.popup_wrap__close').on('click', function() {
+		$('.popup').fadeOut();
+	});	
+
 	let menu_item = $('.header_nav ul li a.menu-child'),
 		menu_wrap = $('.header_nav-open');
 
@@ -139,11 +143,11 @@ $(document).ready(function () {
 		breakpoints: {
 			0: {
 				navigation: {
-					nextEl: '#section_tabs-1 .control_smart .arrow-right',
-					prevEl: '#section_tabs-1 .control_smart .arrow-left',
+					nextEl: '#section_tabs-2 .control_smart .arrow-right',
+					prevEl: '#section_tabs-2 .control_smart .arrow-left',
 				},
 				pagination: {
-					el: '#section_tabs-1 .control_smart .arrow_control-nav',
+					el: '#section_tabs-2 .control_smart .arrow_control-nav',
 					clickable: true,
 				},
 			},
@@ -151,11 +155,11 @@ $(document).ready(function () {
 				direction: 'vertical',
 
 				navigation: {
-					nextEl: '#section_tabs-1 .arrow-bottom',
-					prevEl: '#section_tabs-1 .arrow-top',
+					nextEl: '#section_tabs-2 .arrow-bottom',
+					prevEl: '#section_tabs-2 .arrow-top',
 				},
 				pagination: {
-					el: '#section_tabs-1 .arrow_control-nav',
+					el: '#section_tabs-2 .arrow_control-nav',
 					clickable: true,
 				},
 			}
@@ -168,11 +172,11 @@ $(document).ready(function () {
 		breakpoints: {
 			0: {
 				navigation: {
-					nextEl: '#section_tabs-1 .control_smart .arrow-right',
-					prevEl: '#section_tabs-1 .control_smart .arrow-left',
+					nextEl: '#section_tabs-3 .control_smart .arrow-right',
+					prevEl: '#section_tabs-3 .control_smart .arrow-left',
 				},
 				pagination: {
-					el: '#section_tabs-1 .control_smart .arrow_control-nav',
+					el: '#section_tabs-3 .control_smart .arrow_control-nav',
 					clickable: true,
 				},
 			},
@@ -180,11 +184,11 @@ $(document).ready(function () {
 				direction: 'vertical',
 
 				navigation: {
-					nextEl: '#section_tabs-1 .arrow-bottom',
-					prevEl: '#section_tabs-1 .arrow-top',
+					nextEl: '#section_tabs-3 .arrow-bottom',
+					prevEl: '#section_tabs-3 .arrow-top',
 				},
 				pagination: {
-					el: '#section_tabs-1 .arrow_control-nav',
+					el: '#section_tabs-3 .arrow_control-nav',
 					clickable: true,
 				},
 			}
@@ -197,11 +201,11 @@ $(document).ready(function () {
 		breakpoints: {
 			0: {
 				navigation: {
-					nextEl: '#section_tabs-1 .control_smart .arrow-right',
-					prevEl: '#section_tabs-1 .control_smart .arrow-left',
+					nextEl: '#section_tabs-4 .control_smart .arrow-right',
+					prevEl: '#section_tabs-4 .control_smart .arrow-left',
 				},
 				pagination: {
-					el: '#section_tabs-1 .control_smart .arrow_control-nav',
+					el: '#section_tabs-4 .control_smart .arrow_control-nav',
 					clickable: true,
 				},
 			},
@@ -209,11 +213,11 @@ $(document).ready(function () {
 				direction: 'vertical',
 
 				navigation: {
-					nextEl: '#section_tabs-1 .arrow-bottom',
-					prevEl: '#section_tabs-1 .arrow-top',
+					nextEl: '#section_tabs-4 .arrow-bottom',
+					prevEl: '#section_tabs-4 .arrow-top',
 				},
 				pagination: {
-					el: '#section_tabs-1 .arrow_control-nav',
+					el: '#section_tabs-4 .arrow_control-nav',
 					clickable: true,
 				},
 			}
@@ -226,11 +230,11 @@ $(document).ready(function () {
 		breakpoints: {
 			0: {
 				navigation: {
-					nextEl: '#section_tabs-1 .control_smart .arrow-right',
-					prevEl: '#section_tabs-1 .control_smart .arrow-left',
+					nextEl: '#section_tabs-5 .control_smart .arrow-right',
+					prevEl: '#section_tabs-5 .control_smart .arrow-left',
 				},
 				pagination: {
-					el: '#section_tabs-1 .control_smart .arrow_control-nav',
+					el: '#section_tabs-5 .control_smart .arrow_control-nav',
 					clickable: true,
 				},
 			},
@@ -238,11 +242,11 @@ $(document).ready(function () {
 				direction: 'vertical',
 
 				navigation: {
-					nextEl: '#section_tabs-1 .arrow-bottom',
-					prevEl: '#section_tabs-1 .arrow-top',
+					nextEl: '#section_tabs-5 .arrow-bottom',
+					prevEl: '#section_tabs-5 .arrow-top',
 				},
 				pagination: {
-					el: '#section_tabs-1 .arrow_control-nav',
+					el: '#section_tabs-5 .arrow_control-nav',
 					clickable: true,
 				},
 			}
@@ -255,11 +259,11 @@ $(document).ready(function () {
 		breakpoints: {
 			0: {
 				navigation: {
-					nextEl: '#section_tabs-1 .control_smart .arrow-right',
-					prevEl: '#section_tabs-1 .control_smart .arrow-left',
+					nextEl: '#section_tabs-6 .control_smart .arrow-right',
+					prevEl: '#section_tabs-6 .control_smart .arrow-left',
 				},
 				pagination: {
-					el: '#section_tabs-1 .control_smart .arrow_control-nav',
+					el: '#section_tabs-6 .control_smart .arrow_control-nav',
 					clickable: true,
 				},
 			},
@@ -267,11 +271,11 @@ $(document).ready(function () {
 				direction: 'vertical',
 
 				navigation: {
-					nextEl: '#section_tabs-1 .arrow-bottom',
-					prevEl: '#section_tabs-1 .arrow-top',
+					nextEl: '#section_tabs-6 .arrow-bottom',
+					prevEl: '#section_tabs-6 .arrow-top',
 				},
 				pagination: {
-					el: '#section_tabs-1 .arrow_control-nav',
+					el: '#section_tabs-6 .arrow_control-nav',
 					clickable: true,
 				},
 			}
